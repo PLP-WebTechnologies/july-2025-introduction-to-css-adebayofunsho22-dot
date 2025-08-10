@@ -1,0 +1,93 @@
+/* Basic element styling and reset */
+body {
+    font-family: sans-serif, Arial, Helvetica;
+        line-height: 1.6;
+            background-color: #f4f4f4;
+                color: #333;
+                    /* Demonstrates the Box Model on the body element */
+                        margin: 0;
+                            padding: 20px;
+                            }
+
+                            /* Header styling using an element selector */
+                            header {
+                                background-color: #35424a;
+                                    color: #ffffff;
+                                        /* Demonstrates the Box Model */
+                                            padding: 20px;
+                                                margin-bottom: 20px;
+                                                    border-bottom: 3px solid #e8491d;
+                                                        text-align: center;
+                                                        }
+
+                                                        /* Class selector for the main title */
+                                                        .main-title {
+                                                            margin: 0;
+                                                                font-size: 2.5rem;
+                                                                }
+
+                                                                /* Main content and layout styling */
+                                                                main {
+                                                                    /* Box Model: Adds space around the main content */
+                                                                        margin: 0 auto;
+                                                                            max-width: 960px; /* Consistent sizing */
+                                                                                padding: 20px;
+                                                                                }
+
+                                                                                /* Section styling using a class selector */
+                                                                                .intro-section {
+                                                                                    background-color: #ffffff;
+                                                                                        /* Box Model */
+                                                                                            padding: 20px;
+                                                                                                margin-bottom: 20px;
+                                                                                                    border: 1px solid #ddd;
+                                                                                                        border-radius: 8px;
+                                                                                                        }
+
+                                                                                                        /* Layout for the container of the articles */
+                                                                                                        .card-container {
+                                                                                                            display: flex;
+                                                                                                                flex-wrap: wrap;
+                                                                                                                    gap: 20px; /* Consistent spacing between cards */
+                                                                                                                        justify-content: space-between;
+                                                                                                                        }
+
+                                                                                                                        /* Styling for each article card */
+                                                                                                                        .card {
+                                                                                                                            background-color: #ffffff;
+                                                                                                                                /* Box Model */
+                                                                                                                                    padding: 20px;
+                                                                                                                                        border: 1px solid #ddd;
+                                                                                                                                            border-radius: 8px;
+                                                                                                                                                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                    /* Sizing for a consistent layout */
+                                                                                                                                                        width: calc(33.333% - 14px); /* Three cards per row with gap */
+                                                                                                                                                            box-sizing: border-box; /* Crucial for box model calculations */
+                                                                                                                                                            }
+
+                                                                                                                                                            /* Responsive design for smaller screens */
+                                                                                                                                                            @media (max-width: 768px) {
+                                                                                                                                                                .card-container {
+                                                                                                                                                                        flex-direction: column;
+                                                                                                                                                                            }
+                                                                                                                                                                                .card {
+                                                                                                                                                                                        width: 100%;
+                                                                                                                                                                                            }
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            /* Footer styling */
+                                                                                                                                                                                            footer {
+                                                                                                                                                                                                text-align: center;
+                                                                                                                                                                                                    background-color: #35424a;
+                                                                                                                                                                                                        color: #ffffff;
+                                                                                                                                                                                                            /* Box Model */
+                                                                                                                                                                                                                padding: 15px;
+                                                                                                                                                                                                                    margin-top: 20px;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                    /* ID selector for a specific footer element */
+                                                                                                                                                                                                                    #footer-info {
+                                                                                                                                                                                                                        margin: 0;
+                                                                                                                                                                                                                            font-size: 0.9rem;
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                            
